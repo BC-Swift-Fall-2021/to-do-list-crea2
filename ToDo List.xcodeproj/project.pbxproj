@@ -16,6 +16,7 @@
 		8378DC59270175D200438DD6 /* ToDoDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8378DC58270175D200438DD6 /* ToDoDetailTableViewController.swift */; };
 		8378DC5D2701EA3E00438DD6 /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8378DC5C2701EA3E00438DD6 /* ToDoItem.swift */; };
 		83B6AB17270AA47F00583357 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B6AB16270AA47F00583357 /* ListTableViewCell.swift */; };
+		83B6AB1A270B27E500583357 /* ToDoItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B6AB19270B27E500583357 /* ToDoItems.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		8378DC58270175D200438DD6 /* ToDoDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoDetailTableViewController.swift; sourceTree = "<group>"; };
 		8378DC5C2701EA3E00438DD6 /* ToDoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
 		83B6AB16270AA47F00583357 /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
+		83B6AB19270B27E500583357 /* ToDoItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItems.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				8378DC5C2701EA3E00438DD6 /* ToDoItem.swift */,
 				8378DC462701463000438DD6 /* ToDoListViewController.swift */,
 				8378DC58270175D200438DD6 /* ToDoDetailTableViewController.swift */,
+				83B6AB19270B27E500583357 /* ToDoItems.swift */,
 				83B6AB16270AA47F00583357 /* ListTableViewCell.swift */,
 				8378DC482701463000438DD6 /* Main.storyboard */,
 				8378DC4B2701463500438DD6 /* Assets.xcassets */,
@@ -147,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8378DC472701463000438DD6 /* ToDoListViewController.swift in Sources */,
+				83B6AB1A270B27E500583357 /* ToDoItems.swift in Sources */,
 				8378DC432701463000438DD6 /* AppDelegate.swift in Sources */,
 				8378DC5D2701EA3E00438DD6 /* ToDoItem.swift in Sources */,
 				8378DC59270175D200438DD6 /* ToDoDetailTableViewController.swift in Sources */,
