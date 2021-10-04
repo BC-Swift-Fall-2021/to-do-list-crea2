@@ -5,12 +5,12 @@
 //  Created by Christopher Rea on 10/4/21.
 //
 
-import Foundation
+import UIKit
 import UserNotifications
     
 struct LocalNotificationManager {
     
-    static func authorizeLocalNotifications() {
+    static func authorizeLocalNotifications(viewController: UIViewController) {
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { (granted, error)
             in
             guard error == nil else {
@@ -21,10 +21,30 @@ struct LocalNotificationManager {
                 print("Notifications Authorization Granted")
             } else {
                 print("The user has denied notifications")
+                DispatchQueue.main.async {
+                    viewController.oneButtonAlert(Title: "User Has Not Allowed Notifications", message: "To recieve alerts for reminders, open the setting app and change")
+                }
             }
         }
     }
-}
+    static func isAuthorized(completed: @escaping (Bool)->() ) {
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { (granted, error)
+            in
+            guard error == nil else {
+                print(" ERROR: \(error!.localizedDescription)")
+                completed(false)
+                return
+            }
+            if granted {
+                print("Notifications Authorization Granted")
+                completed(true)
+            } else {
+                print("The user has denied notifications")
+                completed(false)
+                }
+            }
+        }
+    }
 
 func setCalendarNotification(tile: String, subtitle: String, body: String, badgeNumber: NSNumber?, sound: UNNotificationSound?, date: Date) ->
 // changed static func
@@ -52,5 +72,6 @@ func setCalendarNotification(tile: String, subtitle: String, body: String, badge
         }
     }
     return notificationID
-}
+  }
+
 
