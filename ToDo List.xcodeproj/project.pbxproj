@@ -17,6 +17,7 @@
 		8378DC5D2701EA3E00438DD6 /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8378DC5C2701EA3E00438DD6 /* ToDoItem.swift */; };
 		83B6AB17270AA47F00583357 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B6AB16270AA47F00583357 /* ListTableViewCell.swift */; };
 		83B6AB1A270B27E500583357 /* ToDoItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B6AB19270B27E500583357 /* ToDoItems.swift */; };
+		83B6AB1D270B2E3900583357 /* LocalLocalizationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B6AB1C270B2E3900583357 /* LocalLocalizationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		8378DC5C2701EA3E00438DD6 /* ToDoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
 		83B6AB16270AA47F00583357 /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
 		83B6AB19270B27E500583357 /* ToDoItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItems.swift; sourceTree = "<group>"; };
+		83B6AB1C270B2E3900583357 /* LocalLocalizationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalLocalizationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 			children = (
 				8378DC422701463000438DD6 /* AppDelegate.swift */,
 				8378DC442701463000438DD6 /* SceneDelegate.swift */,
+				83B6AB1C270B2E3900583357 /* LocalLocalizationManager.swift */,
 				8378DC5C2701EA3E00438DD6 /* ToDoItem.swift */,
 				8378DC462701463000438DD6 /* ToDoListViewController.swift */,
 				8378DC58270175D200438DD6 /* ToDoDetailTableViewController.swift */,
@@ -149,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83B6AB1D270B2E3900583357 /* LocalLocalizationManager.swift in Sources */,
 				8378DC472701463000438DD6 /* ToDoListViewController.swift in Sources */,
 				83B6AB1A270B27E500583357 /* ToDoItems.swift in Sources */,
 				8378DC432701463000438DD6 /* AppDelegate.swift in Sources */,
